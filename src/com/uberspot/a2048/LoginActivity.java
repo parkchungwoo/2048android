@@ -43,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btn_login:
+                    login();
                     startMainActivity();
                     break;
                 case R.id.btn_signup:
@@ -51,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     };
 
-    private void signUp() {
+    private void login() {
         String email = ((EditText)findViewById(R.id.et_email)).getText().toString();
         String password = ((EditText)findViewById(R.id.et_pass)).getText().toString();
 
